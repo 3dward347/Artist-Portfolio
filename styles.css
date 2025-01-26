@@ -77,6 +77,18 @@ p {
     border-bottom: 2px solid grey;
 }
 
+h1 {
+    font-family: lato;
+    Font-size: 60px;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.red-style {
+    color: red;
+}
+
 section {
     margin: auto;
     width: 45%;
