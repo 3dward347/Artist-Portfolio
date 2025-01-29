@@ -2,10 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
+
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     background-color: #24252a;
 }
 
@@ -59,38 +59,62 @@ button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
 
-
-
-
-
-p {
-    color: #ecf0f1;
-    font-family: lato;
-    text-align: center;
-    border: 1px solid #ecf0f1;
-    font-size: 14px;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    padding-bottom: 30px;
-    padding-top: 8px;
-    border-bottom: 2px solid grey;
+.intro {
+    width: 100%;
+    height: 500px;
+    
 }
 
-h1 {
-    font-family: lato;
-    Font-size: 60px;
-    color: white;
-    text-align: center;
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 250px;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    justify-content: space-between;
     border: 1px solid white;
-}
-
-.red-style {
-    color: red;
-}
-
-section {
+    padding: 20px;
     margin: auto;
-    width: 45%;
-    padding: 10px;
+    border-radius: 10px;
+    animation:borderColorAnimation 5s infinite alternate;
+}
+
+.box:hover {
+    border: 2px solid white;
+}
+
+.about-header {
+    font-size: 30px;
+    width: 100%;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+}
+
+.about-p {
+    font-size: 18px;
+    color: white;
+    display: block;
+    margin: 0;
+}
+
+
+@keyframes borderColorAnimation {
+    0% {
+        border-color: #ff7e5f;
+    }
+    50% {
+        border-color: #6a11cb;
+    }
+    100% {
+        border-color: #00c6ff;
+    }
 }
