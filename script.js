@@ -78,8 +78,8 @@ function init() {
         let size = (Math.random() * 2) + 1;
         let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
         let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
-        let directionX = (Math.random() * 2) - 1;
-        let directionY = (Math.random() * 2) - 1;
+        let directionX = (Math.random() * 1) - 0.5;
+        let directionY = (Math.random() * 1) - 0.5;
         let color = '#ffffff'; //particle color
 
         particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
@@ -142,4 +142,3 @@ window.addEventListener('mouseout', function () {
 
 init();
 animate();
-
